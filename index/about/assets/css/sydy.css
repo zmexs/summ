@@ -1,0 +1,206 @@
+style.css
+* {
+    margin: 0px;/*设置四周边距都为0*/
+    box-sizing: border-box;/*宽高的设置值包括border等*/
+}
+.home {
+    position: relative; /*绝对定位，固定在页面上*/
+}
+.player video{
+    width: 100%;
+    height: 100%;
+    z-index: 1; 
+}
+.home2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1; /*图像的堆叠顺序*/
+}
+
+body {
+    background: url("../../../../combination/sydy/bg.png");/*设置背景图片*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;/*设置背景图不随网页滑动而改变*/
+    background-size: contain;
+    z-index: -1;
+}
+.content {
+    perspective: 400px;
+    width: 100%;
+    height: 620px;
+    position: relative;
+    text-align: center;
+    color: inherit;
+}
+/* 顶部导航条 */
+.top {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: inherit, -webkit-linear-gradient(270deg,rgba(75,155,204,0.43) 48.36%,rgba(116,220,214,0.65) 100%);
+    background-image: inherit, -moz-linear-gradient(270deg,rgba(75,155,204,0.43) 48.36%,rgba(116,220,214,0.65) 100%);
+    background-image: inherit, -o-linear-gradient(270deg,rgba(75,155,204,0.43) 48.36%,rgba(116,220,214,0.65) 100%);
+    background-image: inherit, linear-gradient(180deg,rgba(75,155,204,0.43) 48.36%,rgba(116,220,214,0.65) 100%);
+}
+.top a {
+    float: left;
+    display: block;/*将链接变为块元素*/
+    color: #AFE3F1;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;/*去掉链接的下划线*/
+ }
+ 
+/* 链接颜色修改 */
+.top a:hover {
+    background-color: #A1D7EF;
+    color: black;
+}
+
+/*正中间的字*/
+.avr{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    top: 300px;
+    margin: auto;
+    bottom: 0;
+    color: #6FBDD4;
+    font-size: 70px;
+    font-weight: 500;
+    text-align: center;
+}
+
+audio {
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+}
+/* 创建三列 本来是想做三列的，后来没做也懒得改了 */
+/* center column */
+.leftcolumn {
+    float: left;
+    width: 10%;
+}
+
+.centercolumn {
+    margin: auto;
+    width: 80%;
+    height:1000px;
+    padding: 10px;
+    
+}
+.rightcolumn {
+    float: left;
+    width: 10%;
+}
+
+/* 文章卡片 */
+.card {
+    background: linear-gradient(to bottom,#70AAC8, #7DCDD5, #4CC7D3);
+    color: #3C6E73;
+    -webkit-background-clip: text;
+    background-color: rgba(255,255,255,0.5);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 50px;
+}
+#biaoti {
+    text-align: center;
+}
+#qita {
+    text-align: right;
+}
+/* 列后面清除浮动 */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*旋转的音符效果*/
+.music {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 40px;
+    height: 30px;
+    animation: muscis 5s linear infinite;
+}
+@keyframes muscis {
+    from {
+        transform: rotate (0deg);
+        opacity: .6;
+    }
+
+    to {
+        transform: rotate(360deg);
+        opacity: .8;
+    }
+}
+
+.yinyue {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 400px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+
+/* 底部 */
+.footer {
+    background-image: linear-gradient(rgba(211, 104, 29, 0.80),rgba(5,72,99,0.80));
+   
+    text-align: center;
+    margin-top: 50px;
+}
+
+/*中间的字效果*/
+.btn {
+    width: 18%;
+    height: 60px;
+    position: static;
+    top: 65%;
+    left: 41%;
+    background-image: -webkit-linear-gradient(90deg,rgba(211,104,29,0.00) 0%,rgba(5,72,99,0.95) 100%);
+    background-image: -moz-linear-gradient(90deg,rgba(211,104,29,0.00) 0%,rgba(5,72,99,0.95) 100%);
+    background-image: -o-linear-gradient(90deg,rgba(211,104,29,0.00) 0%,rgba(5,72,99,0.95) 100%);
+    background-image: linear-gradient(0deg,rgba(211,104,29,0.00) 0%,rgba(5,72,99,0.95) 100%);
+    border-radius: 40px;
+    border-color: dodgerblue;
+    text-align: center;
+}
+
+.btn p{
+        line-height: 60px;
+        font-size: 22px;
+        color: black;
+    }
+.bt {
+    cursor: pointer; /*使鼠标放上边显示手指形状*/
+    width: 25%; /*设置宽*/
+    height: 50px; /*设置高*/
+    display: block; /*行内元素设置宽高不生效，使用display:block;可以将行内元素设置为块集元素 */
+    text-align: center; /*文字在容器中横向居中*/
+    line-height: 40px; /*当数值与height一样的时候文字垂直居中*/
+    text-decoration: none; /*将文字下划线去除*/
+    background-image: linear-gradient(rgba(211, 104, 29, 0.95),rgba(5,72,99,0.95)); /*设置元素背景颜色：渐变*/
+    color: rgba(0, 0, 0, 0.60); /*设置文字颜色*/
+    border: none;  /*去除边框*/
+    margin-bottom: 10px; /*下部外边框距离10像素*/
+    margin: auto;  /*使按钮居中*/
+    font-size: 20px; /*设置字体大小*/
+}
+.style1{
+    background: linear-gradient(to bottom,#f0610e, #e8771a, #fff34a);
+    -webkit-background-clip: text;
+    color: #96D7F0;
+} 
+.style2{
+	background: linear-gradient(to right,#f0610e, #e8771a, #fff34a);
+  	-webkit-background-clip: text;
+  	color: transparent;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>山岩蝶影</title>
+    <link rel="stylesheet" type="text/css" href="../css/sydy.css">
+</head>
+<body>
+    <div class="btn">
+        <p> ROKE SHADOW</p>
+    </div>
+    <div class="top">
+        <a href="#" >开发项目</a>
+        <a href="#" >模组介绍</a>
+        <a href="#" >开发思路</a>
+        <a href="#" >项目特色</a>
+        <a href="#" >团队成员</a>
+        <a href="#" >关于我们</a>
+        <a href="../html/mod.html"  style="float:right">回到首页</a>
+    </div>
+    <div class="content">
+    
+        <h1 class="avr">ROKE SHADOW</h1>
+    </div>
+
+
+    <div class="yinyue">
+        <img class="music" src="../../../../combination/sydy/BigPic.png" alt="">
+        <audio autoplay="autoplay" id="audio" loop="loop">
+            <source src="../../../assets/video/syzm.mp3" type="audio/MP3">
+
+        </audio>
+
+    </div>
+    <div class="row">
+        <div class="centercolumn">
+            <div class="card">
+
+                <h2 id="biaoti">愿你我所热爱的山岩蝶影工作室</h2><br />
+                <hr />
+                <h4 id="qita">2023 年 11月 29日</h4>
+
+                <p style="text-indent:2em;">1，本工作室招生面对的是生日2000年1月1日至2008年9月1号之间的成员</p>
+                <p style="text-indent:2em">2，工作室目前设有地图部，皮肤部，宣传部，请您决定好了您要去那个部门后，再决定是否加入，各部门分化如下</p>
+                <p style="text-indent:2em">
+                    （1）地图部：地图部主要以投稿到中国版的玩法图为主，地图部下面分为建筑组和指令组，
+                         ①建筑组要求：至少精通一种类型的建筑（中国唐代建筑，中国现代建筑，中世纪建筑，欧洲建筑等）如果您对建筑组有兴趣，需要把您的原创（或者仿照建筑）图片发送给室长梦樱需要包括一张整体建筑，和三张局部细节（不带光影与材质）
+
+                </p>
+                <p style="text-indent:2em">
+                         指令组要求：需要了解指令和红石，审核门槛不是很低，需要现场审核
+                <p style="text-indent:2em">
+                    （2）皮肤部：皮肤部主要以原创，同人，皮肤为主。如果您对皮肤有所了解，希望让自己的皮肤上传到中国版，欢迎加入皮肤部，如果您有所兴趣，需要把您所做皮肤的分解图与渲染图提交到彼岸处（会渲染的会优先考虑）
+                <p style="text-indent:2em">
+                    （3）宣传部：主要负责团队宣传，活动策划等，如果您在这方面有所研究，想加入到这个部门，请直接联系室长梦樱，现场审核（注：宣传部审核比较严，会剪辑视频，有宣传途径，会做引流的优先考虑）
+                </p>
+            </div>
+            <br /><br />
+            <div class="card">
+                <h2 id="biaoti">山岩蝶影</h2><br />
+                <hr />
+                <h4 id="qita">2023 年 11 月 30日</h4>
+                <p style="text-indent:2em">
+                    3，我们工作室属于那种新起工作室，如果不能接受慢慢进步的请勿加入
+
+                </p>
+                <p style="text-indent:2em">
+                    4，工作室平常气氛较为轻松，如果想来工作室天天工作。。。那基本没戏
+                </p>
+                <p style="text-indent:2em">
+                    5，工作室主要工作在寒暑假，节假日，平常会安排团建，如果您假期没有时间来处理工作室事务，请绕步。
+                </p>
+                <p style="text-indent:2em">
+                    6，工作室室员相处中会有摩擦，玻璃心，公主病请绕步
+                </p>
+                <p style="text-indent:2em">
+                    7，加入工作室后会有一个月的审核期，审核期期间内，主要观察您与室员的相处情况，如果这一个月内您经常性的潜水，直接按照审核期不过处理
+                </p>
+                <p style="text-indent:2em">
+                    8，工作室未来会涉及mod，材质等部门，如果您有在这方面有深造，欢迎加入
+                </p>
+            </div>
+
+        </div>
+
+
+    </div>
+   
+    
+    <br /><br />
+    <script>
+    let mucics = document.getElementById('audio')
+    document.body.addEventListener('mousemove', function() {
+        setTimeout(() => {
+            mucics.play();
+        }, 2000);
+    }, false);
+    </script>
+    <script>
+        (function (window, document, undefined) {
+            var hearts = [];
+            window.requestAnimationFrame = (function () {
+                return window.requestAnimationFrame ||
+				window.webkitRequestAnimationFrame ||
+				window.mozRequestAnimationFrame ||
+				window.oRequestAnimationFrame ||
+				window.msRequestAnimationFrame ||
+				function (callback) {
+				    setTimeout(callback, 1000 / 60);
+				}
+            })();
+            init();
+            function init() {
+                css(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: absolute;}.heart:after{top: -5px;}.heart:before{left: -5px;}");
+                attachEvent();
+                gameloop();
+            }
+            function gameloop() {
+                for (var i = 0; i < hearts.length; i++) {
+                    if (hearts[i].alpha <= 0) {
+                        document.body.removeChild(hearts[i].el);
+                        hearts.splice(i, 1);
+                        continue;
+                    }
+                    hearts[i].y--;
+                    hearts[i].scale += 0.004;
+                    hearts[i].alpha -= 0.013;
+                    hearts[i].el.style.cssText = "left:" + hearts[i].x + "px;top:" + hearts[i].y + "px;opacity:" + hearts[i].alpha + ";transform:scale(" + hearts[i].scale + "," + hearts[i].scale + ") rotate(45deg);background:" + hearts[i].color;
+                }
+                requestAnimationFrame(gameloop);
+            }
+            function attachEvent() {
+                var old = typeof window.onclick === "function" && window.onclick;
+                window.onclick = function (event) {
+                    old && old();
+                    createHeart(event);
+                }
+            }
+            function createHeart(event) {
+                var d = document.createElement("div");
+                d.className = "heart";
+                hearts.push({
+                    el: d,
+                    x: event.clientX - 5,
+                    y: event.clientY - 5,
+                    scale: 1,
+                    alpha: 1,
+                    color: randomColor()
+                });
+                document.body.appendChild(d);
+            }
+            function css(css) {
+                var style = document.createElement("style");
+                style.type = "text/css";
+                try {
+                    style.appendChild(document.createTextNode(css));
+                } catch (ex) {
+                    style.styleSheet.cssText = css;
+                }
+                document.getElementsByTagName('head')[0].appendChild(style);
+            }
+            function randomColor() {
+                return "rgb(" + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + ")";
+            }
+        })(window, document);
+    </script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+@charset "utf-8";
+ 
+/* 统一板块宽度和左右居中 */
+ 
+.banner_con,
+.news_con,
+.case_con,
+.links_con,
+.footer_con {
+    width: 1002px;
+    margin: 0 auto;
+}
+ 
+#banner {
+    height: 465px;
+    background: rgb(255, 219, 219) url("..") no-repeat center;
+}
+ 
+#banner .banner_con {
+    height: 500px;
+    /* background: pink; */
+    margin: 0 auto;
+}
+ 
+.news_con {
+    height: 243px;
+    background: white;
+}
+ 
+.news_title {
+    /* background: cadetblue; */
+    font-size: 18px;
+    color: #EE96E1;
+    line-height: 18px;
+    padding-top: 36px;
+}
+ 
+.news_list {
+    /* background: cornflowerblue; */
+    margin-top: 23px;
+}
+ 
+.news_list li {
+    width: 437px;
+    height: 25px;
+    background: url("..") no-repeat left;
+    padding-left: 14px;
+    /* margin-top: 23px;不能给li加哦 要给他爹，不然每个儿子顶部都会空出来*/
+}
+ 
+.news_list li a {
+    float: left;
+    font-size: 12px;
+    color: #D85B5B;
+    line-height: 25px;
+}
+ 
+.news_list li span {
+    float: right;
+    color: #fcf9f9;
+    font-size: 12px;
+}
+ 
+.news_l {
+    width: 480px;
+    height: 243px;
+    /* background: rebeccapurple; */
+    float: left;
+    padding-left: 21px;
+}
+ 
+.news_c {
+    width: 194px;
+    height: 243px;
+    background: #0000;
+    float: left;
+    padding: 0 27px 0 20px;
+}
+ 
+.news_c .txt1 {
+    font-size: 12px;
+    color: #FFA1A1;
+    line-height: 25px;
+    margin-top: 34px;
+    /* 行高自己去量哦 */
+}
+ 
+.news_c .txt2 {
+    font-size: 12px;
+    color: #FFA7A7;
+    line-height: 25px;
+    margin-top: 15 px;
+    /* 行高自己去量哦 */
+}
+ 
+.news_r {
+    width: 180px;
+    height: 243px;
+    background: #fbfbfb url("..") no-repeat right bottom;
+    float: left;
+    padding: 0 38px 0 24px;
+}
+ 
+.news_r .txt3 {
+    font-size: 12px;
+    color: #FFACAC;
+    line-height: 24px;
+    margin: 21px 0 22px 0;
+}
+ 
+.case_con {
+    height: 304px;
+    /* background: goldenrod; */
+}
+ 
+.case_con h3 {
+    font-size: 18px;
+    color: #C995D8;
+    /* background: pink; */
+    padding: 28px 0 18px 22px;
+}
+ 
+.case_con .case_box {
+    height: 240px;
+    /* background: orange; */
+}
+ 
+.case_box dl {
+    width: 210px;
+    /* 这是由图片尺寸为210得出的，这样文本就会屈居于一处 */
+    /* background: burlywood; */
+    float: left;
+    margin: 0 20px;
+}
+ 
+ 
+/* 这里很重要！一定要设置宽高，也就是图片尺寸得出，这样以后图片更换，结构就不会乱！ */
+ 
+.case_box dl dt {
+    width: 210px;
+    height: 136px;
+}
+ 
+.case_box dl dd {
+    font-size: 12px;
+    color: #D35A5A;
+    line-height: 24px;
+    margin-top: 13px;
+}
+ 
+ 
+/* 上面给dt这个容器指定了宽高，现在让img跟随这个容器的宽高！！ */
+ 
+.case_box dl dt img {
+    width: 100%;
+    height: 100%;
+}
+ 
+#links {
+    background: #e5e5e5;
+}
+ 
+
+.links_con .links_title {
+    color: #F27C7C;
+    line-height: 16px;
+    border-bottom: 1px solid #0000;
+    padding: 31px 0 11px 13px;
+}
+ 
+.links_con .links_l {
+    width: 452px;
+    height: 250px;
+    background: #0000;
+    float: left;
+    margin-left: 20px;
+}
+ 
+.links_con .links_list {
+    /* background: cornsilk; */
+    height: 170px;
+    padding-left: 5px;
+    padding-top: 15px;
+}
+ 
+.links_con .links_list li {
+    width: 136px;
+    height: 24px;
+    background: url("..") no-repeat left center;
+    font-size: 12px;
+    line-height: 24px;
+    padding-left: 13px;
+    float: left;
+}
+ 
+.links_con .links_list li a {
+    color: #F6A2A2;
+}
+ 
+.links_con .links_c {
+    width: 153px;
+    height: 250px;
+    background: #0000;
+    float: left;
+    margin: 0 50px;
+}
+ 
+.links_con .links_c .links_list li {
+    width: 130px;
+}
+ 
+.links_con .links_r {
+    width: 256px;
+    height: 250px;
+    background: #0000;
+    float: left;
+}
+ 
+.links_con .links_r .map {
+    text-align: center;
+    padding-top: 11px;
+}

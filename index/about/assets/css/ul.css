@@ -1,0 +1,27 @@
+ul{
+    background-color: #f79797;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+li{
+    /*display与float两种方式使列表转为横向*/
+    /* display: inline; */
+    float: left;
+    
+}
+
+li a{
+    display:block ;
+    color: #ff2b2b;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 16px;
+}
+li a:hover{
+    background-color:rgb(247, 10, 10) ;
+    color: #712727;
+}
+
+
+
